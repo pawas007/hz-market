@@ -2,14 +2,14 @@
 import {RouterLink} from "vue-router"
 import {useDark, useToggle} from '@vueuse/core'
 import {MoonIcon, SunIcon} from '@heroicons/vue/24/solid'
-import Cart from "@/components/header/Cart.vue"
+import Cart from "@/components/header/Cart/Cart.vue"
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
 
 </script>
 <template>
-  <header class="shadow shadow-black sticky top-0">
+  <header class="shadow sticky top-0 z-50">
     <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
         <a href="https://flowbite.com" class="flex items-center">
